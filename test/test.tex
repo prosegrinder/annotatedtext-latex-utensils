@@ -1,0 +1,53 @@
+\documentclass[a4paper]{scrartcl}
+% this is a comment
+
+%opening
+\title{A great test document}
+\subtitle{For testing proposes}
+\author{esoares}
+
+% importing packages
+\usepackage{acronym}
+\usepackage{url}
+
+% start of text that will be actually displayed
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+% phrases could be multiline parted, new line is marked with \newline, \\ or double line change
+Testing the
+test\ldots
+
+An actual new paragraph.
+\end{abstract}
+
+\section{Introduction}
+
+% notice the "ac" command, this a modifier of the inside text created by the imported package "acronym"
+% packages can add new commands
+% this particular adds acronyms, which means that the first occurrence of the acronym will be expanded
+% acronyms need to be defined somewhere, with another command (\acrodef), but I will keep it out of the scope of this example
+\section{Well, this is \ac{ok}}
+
+Let's add a figure! Check out figure~\ref{fig:figure1}.
+
+% begining of a special environment to display a image
+\begin{figure}
+	\includegraphics[width=0.9\linewidth, page=5]{yoda.pdf}
+	\caption{good caption it is}
+	\label{fig:figure1}
+\end{figure}
+
+% special case, where some modifiers to the text can be performed between {\modifier }
+Writing some really tiny text with {\tiny this is a tiny text}.
+
+\section{Conclusion}
+
+Done?
+Wait, lets cite some work~\cite{bibliography-mark}.
+
+% where can be put some extra commands to generate a bibliography for instance
+
+\end{document}

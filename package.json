@@ -1,0 +1,32 @@
+{
+  "name": "annotatedtext-latex-utils",
+  "version": "0.1.0",
+  "description": "A lightweight JavaScript library based on annotatedtext and latex-utils for converting latex documents into an annotated text format consumable by LanguageTool as AnnotatedText.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prosegrinder/annotatedtext-latex-utils.git"
+  },
+  "keywords": [
+    "languagetool",
+    "annotatedtext",
+    "latex-utils"
+  ],
+  "author": "David L. Day <david@davidlday.com> (https://www.davidlday.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prosegrinder/annotatedtext-latex-utils/issues"
+  },
+  "homepage": "https://github.com/prosegrinder/annotatedtext-latex-utils#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.0.0"
+  },
+  "dependencies": {
+    "annotatedtext": "^0.1.2",
+    "latex-utensils": "^1.2.3"
+  }
+}
